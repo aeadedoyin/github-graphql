@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Github</title>
+</head>
+
+<body>
+    <div id="template">
+        <header class="bg-bunker">
+            <!-- Desktop/Tab -->
+            <nav class="hidden md:flex justify-between items-center mx-auto p-4">
+                <div class="flex-grow flex items-center font-semibold">
+                    <a href="https://github.com" class="px-2">
+                        <svg height="32" class="text-white fill-current" viewBox="0 0 16 16" version="1.1" width="32"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill-rule="evenodd"
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div
+                        class="flex-grow flex w-full justify-between items-center border border-gray-700 rounded-md p-1 mx-2 focus-within:bg-white search-group">
+                        <input type="text" placeholder="Search or jump to..."
+                            class="bg-bunker rounded-sm text-white outline-none w-full search focus:bg-white focus:text-gray-700" />
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="20px"
+                            viewBox="0 0 19 20" xml:space="preserve" class="search-slash">
+                            <path fill="none" stroke="#979A9C" opacity="0.4"
+                                d="M3.5,0.5h12c1.7,0,3,1.3,3,3v13c0,1.7-1.3,3-3,3h-12c-1.7,0-3-1.3-3-3v-13C0.5,1.8,1.8,0.5,3.5,0.5z" />
+                            <path fill="#979A9C" d="M11.8,6L8,15.1H7.1L10.8,6L11.8,6z" />
+                        </svg>
+                    </div>
+                    <a href="#" class="text-white px-2 whitespace-no-wrap">Pull requests</a> <a href="#"
+                        class="text-white px-2 whitespace-no-wrap">Issues</a> <a href="#"
+                        class="text-white px-2 whitespace-no-wrap">Codespaces</a>
+                    <a href="#" class="text-white px-2 whitespace-no-wrap">Marketplace</a>
+                    <a href="#" class="text-white px-2 whitespace-no-wrap">Explore</a>
+                </div>
+                <div class="flex items-center">
+                    <!-- Notification -->
+                    <div class="flex items-center px-2 relative cursor-pointer" title="You have unread notifications">
+                        <span class="blue-tick"></span>
+                        <svg class="text-white fill-current" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path
+                                d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="flex items-center px-2 cursor-pointer">
+                        <svg class="text-white fill-current" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z">
+                            </path>
+                        </svg>
+                        <div class="pl-1"><span class="down-caret"></span></div>
+                    </div>
+                    <div class="flex items-center px-2 cursor-pointer">
+                        <img data-avatar src="img/avatar-placeholder.png"
+                            class="w-6 h-6 object-cover object-top rounded-full" alt="" srcset="" />
+                        <div class="pl-1"><span class="down-caret"></span></div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile -->
+            <nav class="flex md:hidden justify-between items-center mx-auto p-4">
+                <button class="bg-transparent hover:bg-gray-800 p-2" id="navMenuButton">
+                    <svg height="24" class="octicon octicon-three-bars text-white fill-current" viewBox="0 0 16 16"
+                        version="1.1" width="24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+                        </path>
+                    </svg>
+                </button>
+                <a href="https://github.com" class="px-2">
+                    <svg height="32" class="text-white fill-current" viewBox="0 0 16 16" version="1.1" width="32"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path fill-rule="evenodd"
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="flex items-center px-2 relative cursor-pointer" title="You have unread notifications">
+                    <span class="blue-tick"></span>
+                    <svg class="text-white fill-current" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                        aria-hidden="true">
+                        <path
+                            d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z">
+                        </path>
+                    </svg>
+                </div>
+            </nav>
+            <!-- Mobile Dropdown -->
+            <div class="hidden md:hidden flex-col p-4" id="mobileNavDropDown">
+                <div
+                    class="flex-grow flex w-full justify-between items-center border border-gray-700 rounded-md p-1 focus-within:bg-white search-group mb-2">
+                    <input type="text" placeholder="Search or jump to..."
+                        class="bg-bunker rounded-sm text-white outline-none w-full focus:bg-white focus:text-gray-700" />
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="20px"
+                        viewBox="0 0 19 20" xml:space="preserve" class="search-slash">
+                        <path fill="none" stroke="#979A9C" opacity="0.4"
+                            d="M3.5,0.5h12c1.7,0,3,1.3,3,3v13c0,1.7-1.3,3-3,3h-12c-1.7,0-3-1.3-3-3v-13C0.5,1.8,1.8,0.5,3.5,0.5z" />
+                        <path fill="#979A9C" d="M11.8,6L8,15.1H7.1L10.8,6L11.8,6z" />
+                    </svg>
+                </div>
+                <a href="#" class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Pull
+                    requests</a>
+                <a href="#" class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Issues</a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Codespaces</a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Marketplace</a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Explore</a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700">Settings</a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700 flex items-center">
+                    <img data-avatar src="img/avatar-placeholder.png"
+                        class="w-4 h-4 object-cover object-top rounded-full" alt="Profile Picture" srcset="" />
+                    <span data-name class="ml-2">Loading...</span>
+                </a>
+                <a href="#"
+                    class="text-white font-semibold py-2 whitespace-no-wrap border-t border-gray-700 flex items-center">
+                    <svg class="octicon octicon-sign-out text-white fill-current" viewBox="0 0 16 16" version="1.1"
+                        width="16" height="16" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z">
+                        </path>
+                    </svg>
+                    <span class="ml-2">Sign out</span>
+                </a>
+            </div>
+        </header>
+        <div class="">
+            <div class="container mx-auto hidden md:flex flex-wrap justify-end items-end border-b pt-8">
+                <div class="md:w-9/12 flex">
+                    <a href="#overview" class="flex items-center px-3 py-3">
+                        <svg class="octicon octicon-book text-gray-500 fill-current" height="16" viewBox="0 0 16 16"
+                            version="1.1" width="16" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z">
+                            </path>
+                        </svg>
+                        <span class="ml-2">Overview</span>
+                    </a>
+                    <a href="#repositories" class="flex items-center border-b-2 border-red-600 px-3 py-3">
+                        <svg class="octicon octicon-repo font-semibold" height="16" viewBox="0 0 16 16" version="1.1"
+                            width="16" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                            </path>
+                        </svg>
+                        <span class="ml-2">Repositories</span>
+                        <span data-totalRepoCount
+                            class="font-semibold bg-gray-300 rounded-full px-2 ml-2 py-1 text-xs">0</span>
+                    </a>
+                    <a href="#projects" class="flex items-center px-3 py-3">
+                        <svg class="octicon octicon-project text-gray-500 fill-current" height="16" viewBox="0 0 16 16"
+                            version="1.1" width="16" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z">
+                            </path>
+                        </svg>
+                        <span class="ml-2">Projects</span>
+                    </a>
+                    <a href="#packages" class="flex items-center px-3 py-3">
+                        <svg class="octicon octicon-package text-gray-500 fill-current" height="16" viewBox="0 0 16 16"
+                            version="1.1" width="16" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z">
+                            </path>
+                        </svg>
+                        <span class="ml-2">Packages</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container mx-auto flex flex-wrap">
+                <!-- Sidebar -->
+                <div class="w-full md:w-3/12 md:-mt-8 px-4">
+                    <div class="flex items-center md:flex-col -mx-2">
+                        <a href="#status-modal" class="relative block w-3/12 p-2 md:w-full">
+                            <img src="img/avatar-placeholder.png" data-avatar alt="Profile Picture"
+                                class="w-full h-auto object-cover object-top rounded-full mx-auto" />
+                            <div
+                                class="status-group bg-white p-2 shadow-md border absolute rounded-full hidden md:flex cursor-pointer">
+                                <span data-statusEmoji style="width: 20px;">😊</span>
+                                <span class="hidden status px-1 hover:text-indigo-700 whitespace-no-wrap"
+                                    data-statusMessage>Loading...</span>
+                            </div>
+                        </a>
+                        <h1 class="text-xl leading-tight py-3 w-9/12 px-2 md:w-full">
+                            <span data-name class="font-semibold">Loading...</span>
+                            <span data-login class="block font-light">Loading..</span></h1>
+                    </div>
+                    <div id="" class="rounded-md border px-2 py-1 md:hidden flex cursor-pointer">
+                        <span data-statusEmoji></span>
+                        <span data-statusMessage class="px-1 hover:text-indigo-700 whitespace-no-wrap"></span>
+                    </div>
+                    <div data-bio="" class="py-3">Loading...</div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="w-full md:w-9/12 p-4">
+                    <div class="flex md:hidden border-b py-4 w-full overflow-x-auto">
+                        <a href="#overview" class="flex items-center px-3 py-3">
+                            <svg class="octicon octicon-book text-gray-500 fill-current" height="16" viewBox="0 0 16 16"
+                                version="1.1" width="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z">
+                                </path>
+                            </svg>
+                            <span class="ml-2">Overview</span>
+                        </a>
+                        <a href="#repositories" class="flex items-center border-b-2 border-red-600 px-3 py-3">
+                            <svg class="octicon octicon-repo font-semibold" height="16" viewBox="0 0 16 16"
+                                version="1.1" width="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                                </path>
+                            </svg>
+                            <span class="ml-2">Repositories</span>
+                            <span data-totalRepoCount
+                                class="font-semibold bg-gray-300 rounded-full px-2 ml-2 py-1 text-xs">0</span>
+                        </a>
+                        <a href="#projects" class="flex items-center px-3 py-3">
+                            <svg class="octicon octicon-project text-gray-500 fill-current" height="16"
+                                viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z">
+                                </path>
+                            </svg>
+                            <span class="ml-2">Projects</span>
+                        </a>
+                        <a href="#packages" class="flex items-center px-3 py-3">
+                            <svg class="octicon octicon-package text-gray-500 fill-current" height="16"
+                                viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z">
+                                </path>
+                            </svg>
+                            <span class="ml-2">Packages</span>
+                        </a>
+                    </div>
+
+                    <div class="pb-4 border-b">
+                        <input type="text" placeholder="Find a repository..."
+                            class="rounded-sm rounded-md border w-full px-2 py-1" />
+                    </div>
+                    <div class="py-4 border-b inline-block">
+                        <span data-totalRepoCount class="font-semibold">0</span> results for <span
+                            class="font-semibold">public</span>
+                        repositories
+                    </div>
+                    <div class="flex flex-col" id="repositories">
+                        <!-- Repo Item Loads here -->
+                        <div class="flex justify-center items-center w-full h-25v"><span class="spinner"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
